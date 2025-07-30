@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://static.scientificamerican.com/dam/m/1299c71322768b82/original/star_tyc_3203-450-1_in_lacerta_lizard_constellation.jpg?m=1747336540.73&w=1200') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0e6d2; /* soft cream */
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-weight: 600;
+  font-size: 5rem;
+  letter-spacing: 0.15em;
+  color: #f5deb3; /* wheat */
+  text-shadow: 3px 3px 15px rgba(245, 222, 179, 0.6);
+  user-select: none;
+  z-index: 10;
+}
+
+.content {
+  position: relative;
+  min-height: 320vh; /* enough scroll */
+  background: rgba(0, 0, 0, 0.3); /* subtle transparent black */
+  font-size: 1.25rem;
+  line-height: 1.9;
+  padding-top: 130vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.text {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.9;
+  color: #d6d9f0; /* soft light blue */
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.objects {
+  position: absolute;
+  width: 140px;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+  transition: filter 0.3s ease;
+}
+
+.objects:hover {
+  filter: drop-shadow(0 6px 10px rgba(255, 215, 0, 0.8));
+}
+
+.astro-1 { top: 620px; left: 12%; }
+.astro-2 { top: 380px; left: 62%; }
+.ship-1 { top: 820px; left: 35%; }
+.planet-2 { top: 320px; left: 52%; }
+.planet-3 { top: 460px; left: 78%; }
+.comet-1 { top: 510px; left: 18%; opacity: 0.9; }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+  }
+  .content {
+    font-size: 1rem;
+    padding: 2rem 1rem 3rem;
+  }
+  .objects {
+    width: 90px;
+  }
+}
